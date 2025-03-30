@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Dispositivos</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="encabezado">Gestión de Dispositivos E/S</h1>
+    
+    <div class="container">
+        <div class="panel device-panel">
+            <h2>Dispositivos Disponibles</h2>
+            <button id="connect-usb">Conectar USB</button>
+            <button id="connect-printer">Conectar Impresora</button>
+            <button id="connect-headphones">Conectar Auriculares</button>
+            
+            <div id="device-actions" style="margin-top: 20px;"></div>
+        </div>
+        
+        <div class="panel queue-panel">
+            <h2>Sistema de Colas de Operaciones</h2>
+            <div id="queue-display" class="queue"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="panel table-panel">
+            <h2>Tabla de Control de Dispositivos</h2>
+            <table id="device-control-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Estado</th>
+                        <th>Operaciones Pendientes</th>
+                        <th>Driver</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+            <h2 style="margin-top: 20px;">Tabla de Manejadores de Dispositivos</h2>
+            <table id="device-handlers-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Manejador</th>
+                        <th>Operaciones</th>
+                        <th>Dispositivos Activos</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
